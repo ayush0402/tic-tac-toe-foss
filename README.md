@@ -10,7 +10,7 @@
 #### How to Contribute?
 
 - Get yourself assigned to the issue you would like working on.
-- Create a new working branch from clean the `main` branch using `git checkout -b <branch_name>`. All your changes should be made on new created branch only.
+- Create a new working branch from clean `main` branch using `git checkout -b <branch_name>`. All your changes should be made on new created branch only.
 - Stage and commit the changes once done. (`git add . && git commit -m "<commit_message>"`.)
 - Push your committed changes to your forked repository using `git push origin <branch_name>`.
 - Create a pull request merging changes from `origin/<branch_name>` to `upstream/main`.
