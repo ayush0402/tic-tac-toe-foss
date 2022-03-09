@@ -16,3 +16,6 @@
 - Create a pull request merging changes from `origin/<branch_name>` to `upstream/main`.
 - In case of requested changes, do those changes and repeat from step 3.
 - Get your PR merged. 🎉
+
+
+Feel free to ask any questions in case you are stuck somewhere.
