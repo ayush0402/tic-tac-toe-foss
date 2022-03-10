@@ -17,17 +17,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       val boardstatus = Array(3){IntArray(3) {-1} }
-
-    val msgtext=findViewById<TextView>(R.id.msgtext)
+        val boardstatus = Array(3){IntArray(3) {-1} }
 
         val board = arrayOf(
                 arrayOf(binding.btn1, binding.btn2, binding.btn3),
                 arrayOf(binding.btn4, binding.btn5, binding.btn6),
                 arrayOf(binding.btn7, binding.btn8, binding.btn9)
         )
-
-
 
         binding.btn1.setOnClickListener {
             binding.btn1.isEnabled=false
@@ -39,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[0][0]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn2.setOnClickListener {
             binding.btn2.isEnabled=false
@@ -51,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[0][1]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn3.setOnClickListener {
             binding.btn3.isEnabled=false
@@ -63,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[0][2]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn4.setOnClickListener {
             binding.btn4.isEnabled=false
@@ -75,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[1][0]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn5.setOnClickListener {
             binding.btn5.isEnabled=false
@@ -87,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[1][1]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn6.setOnClickListener {
             binding.btn6.isEnabled=false
@@ -99,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[1][2]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn7.setOnClickListener {
             binding.btn7.isEnabled=false
@@ -111,7 +107,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[2][0]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn8.setOnClickListener {
             binding.btn8.isEnabled=false
@@ -123,7 +119,7 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[2][1]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
         binding.btn9.setOnClickListener {
             binding.btn9.isEnabled=false
@@ -135,16 +131,12 @@ class MainActivity : AppCompatActivity() {
                 player=1-player
                 boardstatus[2][2]=0
             }
-            checkWinner(boardstatus,board,player,msgtext)
+            checkWinner(boardstatus,board,player,binding.msgtext)
         }
 
-
-
-        val resetbtn=findViewById<Button>(R.id.resetbtn)
-        resetbtn.setOnClickListener {
+        binding.resetbtn.setOnClickListener {
             resetFun(board,boardstatus)
         }
-
 
     }
     fun checkWinner(boardstatus: Array<IntArray>,board: Array<Array<ImageButton>>,Player: Int,msgtext: TextView){
@@ -152,10 +144,10 @@ class MainActivity : AppCompatActivity() {
         if(boardstatus[0][0]==boardstatus[0][1] && boardstatus[0][1]==boardstatus[0][2] && boardstatus[0][0]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
 
         }
@@ -163,78 +155,78 @@ class MainActivity : AppCompatActivity() {
         else if(boardstatus[1][0]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[1][2] && boardstatus[1][0]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
         }
         //last row
         else if(boardstatus[2][0]==boardstatus[2][1] && boardstatus[2][1]==boardstatus[2][2] && boardstatus[2][0]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
         }
         //first col
         else if(boardstatus[0][0]==boardstatus[1][0] && boardstatus[1][0]==boardstatus[2][0] && boardstatus[0][0]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
         }
         //second col
         else if(boardstatus[0][1]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[2][1] && boardstatus[0][1]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
         }
         //third col
         else if(boardstatus[0][2]==boardstatus[1][2] && boardstatus[1][2]==boardstatus[2][2] && boardstatus[0][2]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
         }
         //primary diagonal
         else if(boardstatus[0][0]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[2][2] && boardstatus[0][0]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
         }
         //secondary diagonal
         else if(boardstatus[2][0]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[0][2] && boardstatus[2][0]!=-1){
             disableAll(board)
             if(player==0){
-                msgtext.setText("Player X is the Winner!")
+                binding.msgtext.setText("Player X is the Winner!")
             }
             else{
-                msgtext.setText("Player O is the Winner!")
+                binding.msgtext.setText("Player O is the Winner!")
             }
         }
         else{
             if(player==1){
-                msgtext.setText("Player X's turn")
+                binding.msgtext.setText("Player X's turn")
             }
             else{
-                msgtext.setText("Player O's turn")
+                binding.msgtext.setText("Player O's turn")
             }
         }
     }
