@@ -9,6 +9,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import com.ayush.tictactoe.databinding.ActivityMenuBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MenuActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMenuBinding
@@ -18,7 +19,9 @@ class MenuActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnplaywithcomp.setOnClickListener {
-            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
+            Snackbar.make(binding.root, "Coming Soon", 10_000)
+                .apply { setAction("Ok") { dismiss() } }
+                .show()
         }
         binding.btnplaywithhuman.setOnClickListener {
             val i = Intent(this,MainActivity::class.java)
