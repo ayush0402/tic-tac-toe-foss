@@ -15,7 +15,7 @@ class menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_menu)
+        setContentView(binding.root)
 
         binding.btnplaywithcomp.setOnClickListener {
             Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
