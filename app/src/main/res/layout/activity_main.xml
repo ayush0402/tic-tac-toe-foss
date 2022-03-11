@@ -118,7 +118,7 @@
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/roundedbutton"
-            android:text="RESET" />
+            android:text="@string/reset" />
     </LinearLayout>
 
     <LinearLayout
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:fontFamily="monospace"
-            android:text="Player X's turn "
+            android:text="@string/playerXTurn"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp" />
