@@ -18,13 +18,13 @@
 
    <Button
        android:id="@+id/btnplaywithhuman"
-       android:layout_width="wrap_content"
+       android:layout_width="209dp"
        android:layout_height="wrap_content"
        android:layout_gravity="center"
        android:layout_marginTop="40dp"
-       android:backgroundTint="@color/yellow"
        android:background="@drawable/roundedbutton"
-       android:text="   Play with human   "/>
+       android:backgroundTint="@color/yellow"
+       android:text="Play with human" />
 
    <Button
        android:id="@+id/btnplaywithcomp"
