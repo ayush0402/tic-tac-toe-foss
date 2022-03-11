@@ -118,7 +118,7 @@
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/roundedbutton"
-            android:text="RESET" />
+            android:text="@string/reset" />
     </LinearLayout>
 
     <LinearLayout
