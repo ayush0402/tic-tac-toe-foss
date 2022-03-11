@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".menu">
+    tools:context=".MenuActivity">
 
    <ImageView
        android:layout_width="350dp"
@@ -35,4 +35,14 @@
        android:backgroundTint="@color/yellow"
        android:background="@drawable/roundedbutton"
        android:text="Play with Computer"/>
+
+   <ImageButton
+       android:id="@+id/githubRedirect"
+       android:layout_width="75dp"
+       android:layout_height="75dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="20dp"
+       android:scaleType="fitCenter"
+       android:background="@null"
+       app:srcCompat="@drawable/githubpng" />
 </LinearLayout>
