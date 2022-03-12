@@ -3,4 +3,6 @@
     <string name="playerXTurn">Player X\'s turn</string>
     <string name="reset">RESET</string>
     <string name="splash_img">splash img</string>
+    <string name="playwithhuman">Play with human</string>
+    <string name="playwithcomp">Play with Computer</string>
 </resources>
