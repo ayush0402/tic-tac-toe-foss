@@ -25,7 +25,7 @@
        android:layout_marginTop="40dp"
        android:background="@drawable/roundedbutton"
        android:backgroundTint="@color/yellow"
-       android:text="Play with human" />
+       android:text="@string/playwithhuman" />
 
    <Button
        android:id="@+id/btnplaywithcomp"
@@ -35,7 +35,7 @@
        android:layout_marginTop="20dp"
        android:backgroundTint="@color/yellow"
        android:background="@drawable/roundedbutton"
-       android:text="Play with Computer"/>
+       android:text="@string/playwithcomp"/>
 
    <ImageButton
        android:id="@+id/githubRedirect"

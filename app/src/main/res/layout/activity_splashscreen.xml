@@ -16,9 +16,10 @@
 <!--        android:src="@drawable/splashtext"-->
 <!--        />-->
     <ImageView
+        android:id="@+id/splashimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/splashimg"
         android:layout_gravity="center"
-        android:src="@drawable/coloredsplash"/>
+        android:contentDescription="@string/splash_img"
+        android:src="@drawable/coloredsplash" />
 </LinearLayout>
