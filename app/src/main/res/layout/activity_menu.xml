@@ -14,6 +14,7 @@
        android:layout_marginTop="70dp"
        android:src="@drawable/menuimg"
        android:layout_gravity="center"
+       android:contentDescription="@string/ImgViwDesc"
        />
 
    <Button
