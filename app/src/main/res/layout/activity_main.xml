@@ -11,31 +11,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dmn_margin_top"
+        android:layout_marginTop="@dimen/LinrLayoutImg_margin_top"
         android:gravity="center"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btn1"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
 
         <ImageButton
             android:id="@+id/btn2"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
 
         <ImageButton
             android:id="@+id/btn3"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
     </LinearLayout>
@@ -49,25 +49,25 @@
 
         <ImageButton
             android:id="@+id/btn4"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
 
         <ImageButton
             android:id="@+id/btn5"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
 
         <ImageButton
             android:id="@+id/btn6"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
     </LinearLayout>
@@ -81,25 +81,25 @@
 
         <ImageButton
             android:id="@+id/btn7"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
 
         <ImageButton
             android:id="@+id/btn8"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
 
         <ImageButton
             android:id="@+id/btn9"
-            android:layout_width="@dimen/dmn_wid_hig"
-            android:layout_height="@dimen/dmn_wid_hig"
-            android:padding="@dimen/dmn_padding"
+            android:layout_width="@dimen/ImgBtn_layout"
+            android:layout_height="@dimen/ImgBtn_layout"
+            android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
     </LinearLayout>
@@ -107,15 +107,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dmn_margin_tp"
+        android:layout_marginTop="@dimen/LinrLayoutRst_marginTop"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/resetbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dmn_margin_lr"
-            android:layout_marginRight="@dimen/dmn_margin_lr"
+            android:layout_marginLeft="@dimen/RstBtn_marginLtRt"
+            android:layout_marginRight="@dimen/RstBtn_marginLtRt"
             android:layout_weight="1"
             android:background="@drawable/roundedbutton"
             android:text="@string/reset" />
@@ -130,7 +130,7 @@
             android:id="@+id/msgtext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dmn_margin_tpe"
+            android:layout_marginTop="@dimen/msgText_marginTop"
             android:fontFamily="monospace"
             android:text="@string/playerXTurn"
             android:textAlignment="center"
