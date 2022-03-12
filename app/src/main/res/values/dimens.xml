@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimens name="dmn_wid_hig">125dp</dimens>
-    <dimens name="dmn_margin_top">110dp</dimens>
-    <dimens name="dmn_padding">0dp</dimens>
-    <dimens name="dmn_margin_tp">75dp</dimens>
-    <dimens name="dmn_margin_lr">20dp</dimens>
-    <dimens name="dmn_margin_tpe">40dp</dimens>
+    <dimen name="dmn_wid_hig">125dp</dimen>
+    <dimen name="dmn_margin_top">110dp</dimen>
+    <dimen name="dmn_padding">0dp</dimen>
+    <dimen name="dmn_margin_tp">75dp</dimen>
+    <dimen name="dmn_margin_lr">20dp</dimen>
+    <dimen name="dmn_margin_tpe">40dp</dimen>
 </resources>
