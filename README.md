@@ -42,12 +42,12 @@ The file on the left shows changes from your local working branch and the file o
 Alternatively, merge conflicts can also be handeled using the terminal :
 #### Resolving merge conflicts using the terminal.
 Resolving merge conflicts using the terminal
-To resolve conflicts between ‘new-branch-name’ (in your fork) and ‘develop’ (in the oppia repository), run:
+To resolve conflicts between ‘new-branch-name’ (in your fork) and ‘main', run:
 
 ```bash
 git checkout new-branch-name
 git fetch upstream
-git merge upstream/develop
+git merge upstream/main
 git commit -a
 git push origin new-branch-name
 ```
