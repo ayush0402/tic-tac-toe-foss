@@ -1,12 +1,9 @@
 package com.ayush.tictactoe
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatDelegate
 import com.ayush.tictactoe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -144,10 +141,10 @@ class MainActivity : AppCompatActivity() {
         if(boardstatus[0][0]==boardstatus[0][1] && boardstatus[0][1]==boardstatus[0][2] && boardstatus[0][0]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
 
         }
@@ -155,78 +152,78 @@ class MainActivity : AppCompatActivity() {
         else if(boardstatus[1][0]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[1][2] && boardstatus[1][0]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
         }
         //last row
         else if(boardstatus[2][0]==boardstatus[2][1] && boardstatus[2][1]==boardstatus[2][2] && boardstatus[2][0]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
         }
         //first col
         else if(boardstatus[0][0]==boardstatus[1][0] && boardstatus[1][0]==boardstatus[2][0] && boardstatus[0][0]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
         }
         //second col
         else if(boardstatus[0][1]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[2][1] && boardstatus[0][1]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
         }
         //third col
         else if(boardstatus[0][2]==boardstatus[1][2] && boardstatus[1][2]==boardstatus[2][2] && boardstatus[0][2]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
         }
         //primary diagonal
         else if(boardstatus[0][0]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[2][2] && boardstatus[0][0]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
         }
         //secondary diagonal
         else if(boardstatus[2][0]==boardstatus[1][1] && boardstatus[1][1]==boardstatus[0][2] && boardstatus[2][0]!=-1){
             disableAll(board)
             if(player==0){
-                binding.msgtext.setText("Player X is the Winner!")
+                binding.msgtext.text = "Player X is the Winner!"
             }
             else{
-                binding.msgtext.setText("Player O is the Winner!")
+                binding.msgtext.text = "Player O is the Winner!"
             }
         }
         else{
             if(player==1){
-                binding.msgtext.setText("Player X's turn")
+                binding.msgtext.text = "Player X's turn"
             }
             else{
-                binding.msgtext.setText("Player O's turn")
+                binding.msgtext.text = "Player O's turn"
             }
         }
     }
