@@ -6,4 +6,6 @@
     <string name="splash_img">splash img</string>
     <string name="playwithhuman">Play with human</string>
     <string name="playwithcomp">Play with Computer</string>
+    <string name="github_button">Github Button to open tic-tac-toe-foss repository</string>
+
 </resources>

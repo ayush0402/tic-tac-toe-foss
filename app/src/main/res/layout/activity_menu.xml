@@ -43,6 +43,7 @@
        android:layout_height="75dp"
        android:layout_gravity="center"
        android:layout_marginTop="20dp"
+       android:contentDescription="@string/github_button"
        android:scaleType="fitCenter"
        android:background="@null"
        app:srcCompat="@drawable/githubpng" />
