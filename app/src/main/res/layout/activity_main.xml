@@ -83,6 +83,7 @@
             android:id="@+id/btn7"
             android:layout_width="@dimen/ImgBtn_layout"
             android:layout_height="@dimen/ImgBtn_layout"
+            android:contentDescription="@string/r3c1"
             android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
@@ -91,6 +92,7 @@
             android:id="@+id/btn8"
             android:layout_width="@dimen/ImgBtn_layout"
             android:layout_height="@dimen/ImgBtn_layout"
+            android:contentDescription="@string/r3c2"
             android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
@@ -99,6 +101,7 @@
             android:id="@+id/btn9"
             android:layout_width="@dimen/ImgBtn_layout"
             android:layout_height="@dimen/ImgBtn_layout"
+            android:contentDescription="@string/r3c3"
             android:padding="@dimen/ImgBtn_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/tileempty" />
